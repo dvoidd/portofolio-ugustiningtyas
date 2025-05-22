@@ -1,506 +1,612 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio - Ugustiningtyas Supriatno</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              background: "#3A393C",
-              primary: "#9980E9",
-              white: "#FBF8FF",
-              accent: "#534E60",
-              card: "#C9C5CF",
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portofolio - Ugustiningtyas Supriatno</title>
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                background: "#3A393C",
+                primary: "#9980E9",
+                white: "#FBF8FF",
+                accent: "#534E60",
+                card: "#C9C5CF",
+              },
             },
           },
-        },
-      };
-    </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <meta name="google-site-verification" content="T3CRybU_gzkO16YMf8aiahyiuEziYvOIE7DnBetFSsQ" />
-  </head>
-  <body>
-   <nav>
-  <div class="nav-container">
-    <a href="#home" class="text-white text-2xl font-bold">Portfolio.</a>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div class="div1"></div>
-      <div class="div2"></div>
-      <div class="div3"></div>
-    </div>
-    <ul id="menu-items" class="menu hidden md:flex flex-row md:gap-16 text-center font-bold">
-      <li><a href="#home" class="nav-item hover:text-gray-300 text-white">Home</a></li>
-      <li><a href="#about" class="nav-item hover:text-gray-300 text-white">About</a></li>
-      <li><a href="#project" class="nav-item hover:text-gray-300 text-white">Project</a></li>
-      <li><a href="#contact" class="nav-item hover:text-gray-300 text-white">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-    <section
-  id="home"
-  class="bg-background min-h-screen flex items-center justify-center"
->
-  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-    <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
-      <img
-        class="h-64 w-64 md:h-96 md:w-96 object-cover hero-image"
-        src="assets/img/hero.png"
-        alt="Ugustiningtyas"
-      />
-    </div>
-    <div class="w-full md:w-1/2 text-center md:text-left hero-text">
-      <p class="font-bold text-xl text-white">Hi, There👋</p>
-      <p class="font-bold text-xl text-primary">Ugustiningtyas Supriatno</p>
-      <p class="text-white text-xl">
-        Frontend Web | Flutter Developer | Internet of Things
-      </p>
-      <p class="text-white text-xl font-bold mb-4">
-        Welcome to my website Portfolio
-      </p>
-      <div class="flex justify-center md:justify-start">
-        <div class="h-10 w-36 bg-primary flex items-center justify-center rounded-[5px] hover:bg-accent">
-          <a class="text-white font-bold" href="https://drive.google.com/file/d/1kVQv08SA9Z_lEr28pbkdLqqkwAW2PMe1/view?usp=sharing">My Resume</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    <section id="about" class="bg-white min-h-screen">
-      <p class="text-background text-3xl font-bold text-center md:text-start p-10 md:pt-20 p-8 about">About Me</p>
-      <div class="flex flex-col md:flex-row items-center md:items-start p-4 md:p-8 gap-0 md:gap-20">
-        <div class="w-full md:w-1/2 order-2 md:order-1">
-            <p class="text-l md:text-2xl text-left md:text-start md:pt-0 about-text">
-                Hello everyone, I'm Ugustiningtyas Supriatno, an undergraduate
-                Computer Engineering student from Universitas Negeri Makassar.
-                Enthusiastic and highly motivated in the field of technology, I have
-                broad curiosity and like to try new things. Right now, I'm focusing
-                on Flutter development and the Internet of Things.
-            </p>
-        </div>
-        <img
-            class="w-full max-w-sm md:w-auto h-auto object-cover order-1 md:order-2 about-image"
-            src="assets/img/about.png"
-            alt="About Me"
-        />
-        
-    </div>
-      <div class="p-5 md:p-8 md:pb-0">
-        <hr />
-      </div>
-      <div class="flex flex-col md:space-x-4 place-items-center md:flex justify-center md:text-start gap-5 md:gap-20 md:flex-row ">
-        <div class="h-auto w-96 rounded-[5px] bg-card shadow-md education">
-          <p class="text-background font-bold text-2xl pt-5 pl-8">Education</p>
-          <ul class="sessions pr-5 pl-8 pb-5">
-            <li>
-              <div class="time font-bold">SMK NEGERI 7 MAKASSAR</div>
-              <p>Software Engineering</p>
-              <p>June 2019 - May 2022</p>
-            </li>
-            <li>
-              <div class="time font-bold">UNIVERSITAS NEGERI MAKASSAR</div>
-              <p>Computer Engineering</p>
-              <p>August 2022 - Present</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="h-auto w-96 bg-card rounded-[5px] shadow-md experiences">
-          <p class="text-background font-bold text-2xl pt-5 pl-8">
-            Experiences
-          </p>
-          <ul class="sessions pr-5 pl-8 pb-5">
-            <li>
-              <div class="time font-bold">Bank BRI KC Panakkukang Makassar</div>
-              <p>Internship</p>
-              <p>April 2021 - June 2021</p>
-            </li>
-            <li>
-              <div class="time font-bold">Universitas Negeri Makassar</div>
-              <p>Lecturer Assistant</p>
-              <p>August 2023 - December 2023</p>
-            </li>
-            <li>
-              <div class="time font-bold">
-                PT Ozami Inti Sinergi - Indobot Academy
-              </div>
-              <p>MSIB Student</p>
-              <p>September 2024 - Present</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="p-5 md:p-8 md:pb-0">
-        <hr />
-      </div>
-      <div class="container mx-auto p-5 md:p-8 cd">
-        <p class="text-3xl font-bold  text-center md:text-start certificate">My Certificates</p>
-        <div class="overflow-x-auto pb-4">
-          <div class="flex space-x-4 w-max">
-            <!-- Certificate 1 -->
-            <div class="flex-shrink-0 w-[300px] bg-card rounded-[5px] shadow-lg">
-              <div class="p-5">
-                <h3 class="font-bold text-l">
-                  How To Become a Mobile Developer
-                </h3>
-                <p class="text-gray-600 mb-4 ">Talenthub Indonesia</p>
-                <img
-                  class="w-full h-auto rounded-[5px]"
-                  src="assets/img/flutter.jpg"
-                  alt="Mobile Developer Certificate"
-                />
-              </div>
+        };
+      </script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <meta name="google-site-verification" content="T3CRybU_gzkO16YMf8aiahyiuEziYvOIE7DnBetFSsQ" />
+    </head>
+    <body>
+      <nav class="fixed w-full z-10 bg-background from-gray-900 to-gray-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16 items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <a href="#home" class="text-white text-2xl font-bold tracking-wider">
+                <span class="text-primary">Port</span>folio<span class="text-primary">.</span>
+              </a>
             </div>
-
-            <!-- Certificate 2 -->
-            <div class="flex-shrink-0 w-[300px] bg-card rounded-[5px] shadow-lg">
-              <div class="p-5">
-                <h3 class="font-bold text-l">Junior Web Devloper</h3>
-                <p class="text-gray-600 mb-4">Digital Talent Scholarship</p>
-                <br />
-                <img
-                  class="w-full h-auto rounded-[5px]"
-                  src="assets/img/jwd.jpg"
-                  alt="jwd"
-                />
-              </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:block">
+              <ul class="flex space-x-10 items-center font-medium">
+                <li><a href="#home" class="nav-item py-2 px-3 text-white hover:text-primary transition-colors duration-300 border-b-2 border-transparent hover:border-primary">Home</a></li>
+                <li><a href="#about" class="nav-item py-2 px-3 text-white hover:text-primary transition-colors duration-300 border-b-2 border-transparent hover:border-primary">About</a></li>
+                <li><a href="#project" class="nav-item py-2 px-3 text-white hover:text-primary transition-colors duration-300 border-b-2 border-transparent hover:border-primary">Project</a></li>
+                <li><a href="#contact" class="nav-item py-2 px-3 text-white hover:text-primary transition-colors duration-300 border-b-2 border-transparent hover:border-primary">Contact</a></li>
+              </ul>
             </div>
-
-            <!-- Certificate 3 -->
-            <div class="flex-shrink-0 w-[300px] bg-card rounded-[5px] shadow-lg">
-              <div class="p-5">
-                <h3 class="font-bold text-l">
-                  Belajar membuat aplikasi Flutter untuk pemula
-                </h3>
-                <p class="text-gray-600 mb-4">Dicoding</p>
-                <img
-                  class="w-full h-auto rounded-[5px]"
-                  src="assets/img/flutter_dico.jpg"
-                  alt="flutter dicoding"
-                />
-              </div>
-            </div>
-
-            <!-- Certificate 4 -->
-            <div class="flex-shrink-0 w-[300px] bg-card rounded-[5px] shadow-lg">
-              <div class="p-5">
-                <h3 class="font-bold text-l">
-                  Belajar Membuat Front-end web untuk pemula
-                </h3>
-                <p class="text-gray-600 mb-4">Dicoding</p>
-                <img
-                  class="w-full h-auto rounded-[5px]"
-                  src="assets/img/web_dico.png"
-                  alt="fe web"
-                />
-              </div>
-            </div>
-
-            <!-- Certificate 5 -->
-            <div class="flex-shrink-0 w-[300px] bg-card rounded-[5px] shadow-lg">
-              <div class="p-5">
-                <h3 class="font-bold text-l">
-                  Belajar Dasar Pemrograman Javascript
-                </h3>
-                <p class="text-gray-600 mb-4">Dicoding</p>
-                <img
-                  class="w-full h-auto rounded-[5px]"
-                  src="assets/img/js.png"
-                  alt="js"
-                />
-              </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button id="mobile-menu-button" class="outline-none mobile-menu-button">
+                <svg class="w-6 h-6 text-primary hover:text-primary" 
+                    fill="none" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor">
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <hr />
-      </div>
-      <div class="container mx-auto p-8 md:p-8">
-        <p class="text-3xl font-bold text-center  md:text-left skill">My Skills</p>
-        <div class="flex flex-wrap justify-center items-center gap-4  sm:gap-8 md:justify-start md:mb-5 md:p-0">
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md html">
-    <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-      <g id="SVGRepo_iconCarrier">
-        <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
-        <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
-        <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
-      </g>
-    </svg>
-  </div>
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md css">
-    <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
-  </div>
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md js">
-    <svg width="50px" height="50px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"> </path> <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"> </path> <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"> </path> </g> </g></svg>
-  </div>
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md flutter">
-    <svg width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_flutter</title><polyline points="15.383 18.316 18.744 15.042 27.093 15.042 19.697 22.438 15.383 18.316 15.383 18.316 15.383 18.316 15.383 18.316 15.383 18.316" style="fill:#40d0fd"></polyline><polygon points="4.907 16.125 9.106 20.424 27.093 2.287 18.744 2.287 4.907 16.125" style="fill:#41d0fd;isolation:isolate"></polygon><polygon points="11.176 22.479 15.435 26.675 19.697 22.438 15.383 18.316 11.176 22.479" style="fill:#1fbcfd"></polygon><polygon points="15.435 26.675 19.697 22.438 26.989 29.813 18.593 29.813 15.435 26.675" style="fill:#095a9d"></polygon><polygon points="15.435 26.675 19.406 25.354 18.068 24.057 15.435 26.675" style="fill:#0e5199"></polygon></g></svg>
-  </div>
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md php">
-    <svg width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><radialGradient id="a" cx="-16.114" cy="20.532" r="18.384" gradientTransform="translate(26.52 -9.307)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffffff"></stop><stop offset="0.5" stop-color="#4c6b96"></stop><stop offset="1" stop-color="#231f20"></stop></radialGradient></defs><title>file_type_php</title><ellipse cx="16" cy="16" rx="14" ry="7.365" style="fill:url(#a)"></ellipse><ellipse cx="16" cy="16" rx="13.453" ry="6.818" style="fill:#6280b6"></ellipse><path d="M18.725,18.2l.667-3.434a1.752,1.752,0,0,0-.372-1.719,2.929,2.929,0,0,0-2-.525H15.867l.331-1.7a.219.219,0,0,0-.215-.26h-1.6a.219.219,0,0,0-.215.177l-.709,3.646a2.051,2.051,0,0,0-.477-1.054,2.783,2.783,0,0,0-2.2-.807H7.7a.219.219,0,0,0-.215.177l-1.434,7.38a.219.219,0,0,0,.215.26H7.869a.219.219,0,0,0,.215-.177l.347-1.785h1.2a5.167,5.167,0,0,0,1.568-.2,3.068,3.068,0,0,0,1.15-.689,3.538,3.538,0,0,0,.68-.844l-.287,1.475a.219.219,0,0,0,.215.26h1.6a.219.219,0,0,0,.215-.177l.787-4.051h1.094c.466,0,.6.093.64.133s.1.165.025.569l-.635,3.265a.219.219,0,0,0,.215.26h1.62A.219.219,0,0,0,18.725,18.2ZM11.33,15.366a1.749,1.749,0,0,1-.561,1.092,2.171,2.171,0,0,1-1.315.321H8.742l.515-2.651h.921c.677,0,.949.145,1.059.266A1.181,1.181,0,0,1,11.33,15.366Z" style="fill:#fff"></path><path d="M25.546,13.332a2.783,2.783,0,0,0-2.2-.807H20.255a.219.219,0,0,0-.215.177l-1.434,7.38a.219.219,0,0,0,.215.26h1.608a.219.219,0,0,0,.215-.177l.347-1.785h1.2a5.167,5.167,0,0,0,1.568-.2,3.068,3.068,0,0,0,1.15-.689,3.425,3.425,0,0,0,1.076-1.927A2.512,2.512,0,0,0,25.546,13.332Zm-1.667,2.034a1.749,1.749,0,0,1-.561,1.092A2.171,2.171,0,0,1,22,16.778H21.29l.515-2.651h.921c.677,0,.949.145,1.059.266A1.181,1.181,0,0,1,23.879,15.366Z" style="fill:#fff"></path><path d="M10.178,13.908a1.645,1.645,0,0,1,1.221.338,1.34,1.34,0,0,1,.145,1.161,1.945,1.945,0,0,1-.642,1.223A2.361,2.361,0,0,1,9.454,17H8.476l.6-3.089ZM6.261,20.124H7.869l.381-1.962H9.627a4.931,4.931,0,0,0,1.5-.191,2.84,2.84,0,0,0,1.07-.642,3.207,3.207,0,0,0,1.01-1.808,2.3,2.3,0,0,0-.385-2.044,2.568,2.568,0,0,0-2.035-.732H7.7Z" style="fill:#000004"></path><path d="M14.387,10.782h1.6L15.6,12.744h1.421a2.767,2.767,0,0,1,1.85.468,1.548,1.548,0,0,1,.305,1.516l-.667,3.434H16.89l.635-3.265a.886.886,0,0,0-.08-.76,1.121,1.121,0,0,0-.8-.2H15.37l-.822,4.228h-1.6Z" style="fill:#000004"></path><path d="M22.727,13.908a1.645,1.645,0,0,1,1.221.338,1.34,1.34,0,0,1,.145,1.161,1.945,1.945,0,0,1-.642,1.223A2.361,2.361,0,0,1,22,17h-.978l.6-3.089ZM18.81,20.124h1.608l.381-1.962h1.377a4.931,4.931,0,0,0,1.5-.191,2.84,2.84,0,0,0,1.07-.642,3.207,3.207,0,0,0,1.01-1.808,2.3,2.3,0,0,0-.385-2.044,2.568,2.568,0,0,0-2.035-.732H20.244Z" style="fill:#000004"></path></g></svg>
-  </div>
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md java">
-    <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z" fill="#E76F00"></path> <path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z" fill="#E76F00"></path> <path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z" fill="#5382A1"></path> <path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z" fill="#5382A1"></path> <path d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z" fill="#5382A1"></path> <path d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z" fill="#5382A1"></path> <path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z" fill="#5382A1"></path> <path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z" fill="#5382A1"></path> </g></svg>
-  </div>
-  <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md arduino">
-    <svg width="50px" height="50px" viewBox="0 -41 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#00979C"> <path d="M14.044,130.399 L0.919,173.242 L11.247,173.242 L13.616,165.259 L26.419,165.259 L28.724,173.242 L39.955,173.242 L26.831,130.399 L14.044,130.399 L14.044,130.399 Z M16.21,156.641 L20.109,143.316 L23.964,156.641 L16.21,156.641 L16.21,156.641 Z"> </path> <path d="M64.632,153.696 C64.477,153.53 64.319,153.373 64.158,153.226 C64.481,153.104 64.796,152.974 65.104,152.832 C66.354,152.258 67.449,151.489 68.359,150.552 C69.279,149.606 70.002,148.466 70.507,147.163 C71.007,145.876 71.261,144.397 71.261,142.77 C71.261,140.527 70.856,138.587 70.06,137.002 C69.255,135.399 68.09,134.079 66.599,133.078 C65.152,132.108 63.392,131.407 61.367,130.996 C59.421,130.601 57.229,130.399 54.854,130.399 L41.456,130.399 L41.456,173.242 L51.731,173.242 L51.731,156.502 L52.036,156.502 C53.16,156.502 54.097,156.749 54.9,157.259 C55.697,157.764 56.308,158.509 56.771,159.541 L62.981,173.242 L74.936,173.242 L67.391,157.959 C66.477,156.103 65.574,154.71 64.632,153.696 L64.632,153.696 Z M60.163,145.477 C59.866,146.043 59.454,146.507 58.903,146.895 C58.322,147.303 57.601,147.616 56.757,147.826 C55.866,148.049 54.849,148.161 53.733,148.161 L51.731,148.161 L51.731,139.142 L53.989,139.142 C56.341,139.142 58.089,139.511 59.184,140.24 C60.138,140.875 60.602,141.945 60.602,143.513 C60.602,144.271 60.458,144.914 60.163,145.477 L60.163,145.477 Z"> </path> <path d="M105.04,135.487 C103.31,133.748 101.128,132.446 98.555,131.619 C96.047,130.81 93.095,130.399 89.782,130.399 L76.193,130.399 L76.193,173.242 L88.022,173.242 C91.839,173.242 95.178,172.722 97.945,171.697 C100.755,170.658 103.102,169.15 104.919,167.216 C106.733,165.286 108.085,162.928 108.935,160.209 C109.769,157.547 110.191,154.553 110.191,151.31 C110.191,147.775 109.768,144.674 108.932,142.093 C108.078,139.449 106.769,137.227 105.04,135.487 L105.04,135.487 Z M96.639,161.524 C94.855,163.506 92.267,164.469 88.727,164.469 L86.467,164.469 L86.467,139.172 L89.27,139.172 C91.251,139.172 92.914,139.452 94.211,140.005 C95.469,140.54 96.442,141.296 97.186,142.314 C97.946,143.358 98.497,144.668 98.823,146.205 C99.166,147.831 99.341,149.715 99.341,151.805 C99.341,156.263 98.432,159.533 96.639,161.524 L96.639,161.524 Z"> </path> <path d="M134.942,157.654 C134.942,159.131 134.806,160.39 134.535,161.396 C134.283,162.335 133.912,163.102 133.43,163.675 C132.968,164.226 132.403,164.615 131.704,164.864 C130.943,165.136 129.97,165.273 128.81,165.273 C127.583,165.273 126.571,165.116 125.802,164.805 C125.063,164.505 124.469,164.076 123.985,163.495 C123.499,162.91 123.151,162.176 122.95,161.31 C122.726,160.354 122.613,159.229 122.613,157.963 L122.613,130.399 L112.339,130.399 L112.339,158.427 C112.339,160.743 112.626,162.869 113.19,164.745 C113.777,166.694 114.745,168.379 116.068,169.75 C117.391,171.12 119.123,172.18 121.216,172.897 C123.25,173.598 125.708,173.953 128.521,173.953 C131.036,173.953 133.344,173.598 135.378,172.897 C137.458,172.184 139.251,171.103 140.708,169.683 C142.166,168.261 143.297,166.471 144.07,164.363 C144.83,162.293 145.216,159.869 145.216,157.158 L145.216,130.399 L134.942,130.399 L134.942,157.654"> </path> <path d="M150.47,139.018 L159.69,139.018 L159.69,164.562 L150.47,164.562 L150.47,173.242 L179.313,173.242 L179.313,164.562 L170.093,164.562 L170.093,139.018 L179.313,139.018 L179.313,130.399 L150.47,130.399 L150.47,139.018"> </path> <path d="M207.905,154.811 L196.419,130.399 L184.79,130.399 L184.79,173.242 L194.359,173.242 L194.359,148.366 L205.906,173.242 L217.476,173.242 L217.476,130.399 L207.905,130.399 L207.905,154.811"> </path> <path d="M250.738,135.468 C247.738,131.653 243.241,129.719 237.374,129.719 C234.864,129.719 232.47,130.164 230.258,131.041 C228.015,131.93 226.033,133.314 224.366,135.158 C222.714,136.986 221.402,139.337 220.469,142.144 C219.546,144.915 219.078,148.238 219.078,152.022 C219.078,159.012 220.565,164.45 223.497,168.188 C226.497,172.014 230.994,173.953 236.861,173.953 C239.372,173.953 241.768,173.508 243.98,172.631 C246.224,171.741 248.205,170.356 249.87,168.515 C251.52,166.688 252.832,164.338 253.768,161.529 C254.689,158.759 255.157,155.436 255.157,151.65 C255.157,144.64 253.67,139.195 250.738,135.468 L250.738,135.468 Z M243.976,157.729 C243.682,159.31 243.223,160.643 242.612,161.692 C242.032,162.691 241.314,163.423 240.419,163.928 C239.527,164.431 238.416,164.686 237.118,164.686 C234.55,164.686 232.76,163.73 231.646,161.765 C230.422,159.606 229.801,156.204 229.801,151.65 C229.801,149.512 229.955,147.591 230.261,145.944 C230.555,144.366 231.017,143.035 231.637,141.986 C232.227,140.983 232.947,140.249 233.838,139.742 C234.717,139.241 235.82,138.987 237.118,138.987 C239.706,138.987 241.501,139.941 242.604,141.903 C243.819,144.063 244.435,147.468 244.435,152.022 C244.435,154.166 244.281,156.086 243.976,157.729 L243.976,157.729 Z"> </path> <path d="M240.315,5.74 L242.138,5.74 L242.138,10.533 L243.431,10.533 L243.431,5.74 L245.269,5.74 L245.269,4.55 L240.315,4.55 L240.315,5.74"> </path> <path d="M249.768,4.55 L248.521,8.628 L247.231,4.55 L245.544,4.55 L245.544,10.533 L246.76,10.533 L246.76,6.711 L247.966,10.533 L249.076,10.533 L250.22,6.81 L250.22,10.533 L251.43,10.533 L251.43,4.55 L249.768,4.55"> </path> <path d="M190.275,120.327 C173.987,120.327 160.061,114.835 147.805,103.602 C140.234,96.665 133.992,88.166 128.249,79.329 C122.507,88.166 116.264,96.665 108.694,103.602 C95.525,115.671 80.427,121.113 62.545,120.236 C28.444,120.088 0.747,93.176 0.747,60.118 C0.747,26.969 28.596,0 62.827,0 C81.559,0 97.33,6.199 111.037,18.95 C117.621,25.075 123.179,32.18 128.249,39.614 C133.319,32.18 138.878,25.075 145.461,18.95 C159.168,6.199 174.939,0 193.671,0 C227.903,0 255.751,26.969 255.751,60.118 C255.751,93.176 228.055,120.088 193.953,120.236 C192.714,120.297 191.487,120.327 190.275,120.327 L190.275,120.327 Z M140.72,59.316 C147.514,70.339 154.108,80.599 162.14,87.959 C171.206,96.268 180.762,99.686 193.115,99.033 L193.671,99.018 C216.202,99.018 234.533,81.568 234.533,60.118 C234.533,38.669 216.202,21.218 193.671,21.218 C180.37,21.218 169.643,25.434 159.913,34.485 C152.646,41.246 146.646,49.908 140.72,59.316 L140.72,59.316 Z M62.827,21.218 C40.296,21.218 21.965,38.669 21.965,60.118 C21.965,81.568 40.296,99.018 62.827,99.018 L63.384,99.033 C75.738,99.686 85.292,96.268 94.358,87.959 C102.39,80.599 108.985,70.339 115.778,59.316 C109.852,49.908 103.852,41.246 96.586,34.485 C86.855,25.434 76.128,21.218 62.827,21.218 L62.827,21.218 Z"> </path> <path d="M196.477,52.407 L196.477,40.901 L184.501,40.901 L184.501,52.407 L172.996,52.407 L172.996,64.325 L184.501,64.325 L184.501,75.916 L196.477,75.916 L196.477,64.325 L207.983,64.325 L207.983,52.407 L196.477,52.407"> </path> <path d="M45.599,52.263 L83.416,52.263 L83.416,64.555 L45.599,64.555 L45.599,52.263 Z"> </path> </g> </g></svg>
-  </div>
-</div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-background shadow-lg">
+          <ul class="pt-2 pb-4 space-y-2 px-4">
+            <li class="active"><a href="#home" class="block py-3 px-4 text-white hover:bg-primary hover:text-white rounded-md transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="block py-3 px-4 text-white hover:bg-primary hover:text-white rounded-md transition-colors duration-300">About</a></li>
+            <li><a href="#project" class="block py-3 px-4 text-white hover:bg-primary hover:text-white rounded-md transition-colors duration-300">Project</a></li>
+            <li><a href="#contact" class="block py-3 px-4 text-white hover:bg-primary hover:text-white rounded-md transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    </section>
-    <section id="project" class="bg-background min-h-screen">
-      <p class="text-white text-3xl font-bold text-center p-10 md:pt-10 p-8 md:text-left project">Project</p>
-    <div class="flex flex-col items-center gap-5 p-0 md:p-8 md:pt-5 md:flex-row">
-  <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] anuflix">
-    <div class="p-5">
-      <h3 class="font-bold text-xl">Anuflix</h3>
-      <p class="text-background mb-4">Movie Apps with TMDb API and develop with Flutter</p>
-      <img class="w-full h-auto rounded-[5px]" src="assets/img/Anuflix.png" alt="anuflix" />
-    </div>
-  </div>
-  <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] anucoffee">
-    <div class="p-5">
-      <h3 class="font-bold text-xl">Anu Coffee</h3>
-      <p class="text-background mb-4">Anu Coffee is an online coffee ordering application made by Flutter and Firebase</p>
-      <img class="w-full h-auto rounded-[5px]" src="assets/img/anucoffe.png" alt="anu coffee" />
-    </div>
-  </div>
-  <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] apotek">
-    <div class="p-5">
-      <h3 class="font-bold text-xl">Apotek Sehat</h3>
-      <p class="text-background mb-4">Java GUI based desktop application for recording drug data, drug categories, and transactions at pharmacies</p>
-      <img class="w-full h-auto rounded-[5px]" src="assets/img/apoteksehat.png" alt="apotek sehat" />
-    </div>
-  </div>
-  <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] jemuranuno">
-    <div class="p-5">
-      <h3 class="font-bold text-xl">JemuranUNO</h3>
-      <p class="text-background mb-4">Automatic Clothesline using Internet of Things and Blynk App</p>
-      <img class="w-full h-auto rounded-[5px]" src="assets/img/jemuranuno.png" alt="jemuranuno" />
-    </div>
-  </div>
-</div>
-    </div>
-    <div class="p-5 md:pt-24 md:p-8">
-      <hr>
-    </div>
-    </section>
-    <section id="contact" class="bg-background min-h-screen">
-      <p class="text-white text-3xl font-bold text-center p-8 md:pb-0 md:text-left contact">Contact</p>
-      <div class="flex flex-col items-start p-8 md:p-8 md:flex-row">
-        <div class="w-[100%]">
-          <p class="text-white text-l">
-            I’m currently looking for any new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I’ll
-            try my best to get back to you!
-          </p>
-          <div class="flex flex-row">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#FBF8FF"></path> </g></svg>
-            <p class="text-white text-sm ml-2">+62 81341498382</p>
-          </div> 
-          <div class="flex flex-row ">
-            <svg width="20
-            " height="20
-            " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#FBF8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="3" y="5" width="18" height="14" rx="2" stroke="#FBF8FF" stroke-width="2" stroke-linecap="round"></rect> </g></svg>
-            <p class="text-white text-sm ml-2">ugustining.tyas237@gmail.com</p>
-          </div> 
-          <div class="flex flex-row ">
-            <svg width="20" height="20" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>location</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-106.000000, -413.000000)" fill="#FBF8FF"> <path d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z" id="location" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
-            <p class="text-white text-sm ml-2 mt-1">Makassar, Indonesia</p>
-          </div> 
-        </div>
-        <div class="w-[100%]">
-          <form action="https://formspree.io/f/mdoqaydp" method="POST">
-      <div class="mb-4">
-        <label for="name" class="block text-white font-bold mb-2">Your Name <span style="color: red;">*</span></label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          class="w-full p-2 border border-gray-300 rounded"
-          placeholder="Your Name"
+      <section
+    id="home"
+    class="bg-background min-h-screen flex items-center justify-center"
+  >
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+        <img
+          class="h-64 w-64 md:h-96 md:w-96 object-cover hero-image"
+          src="assets/img/hero.png"
+          alt="Ugustiningtyas"
         />
       </div>
-      <div class="mb-4">
-        <label for="email" class="block text-white font-bold mb-2">Email Address<span style="color: red;">*</span></label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          class="w-full p-2 border border-gray-300 rounded"
-          placeholder="Your Email"
-        />
-      </div>
-      <div class="mb-4">
-        <label for="message" class="block text-white font-bold mb-2">Your Message <span style="color: red;">*</span></label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          rows="4"
-          class="w-full p-2 border border-gray-300 rounded"
-          placeholder="Your Message"
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        class="w-full h-12 bg-primary text-white font-bold rounded hover:bg-accent transition"
-      >
-        Send Message
-      </button>
-    </form>
+      <div class="w-full md:w-1/2 text-center md:text-left hero-text">
+        <p class="font-bold text-xl text-white">Hi, There👋</p>
+        <p class="font-bold text-xl text-primary">Ugustiningtyas Supriatno</p>
+        <p class="text-white text-xl">
+          Frontend Web | Flutter Developer | Internet of Things
+        </p>
+        <p class="text-white text-xl font-bold mb-4">
+          Welcome to my website Portfolio
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <div class="h-10 w-36 bg-primary flex items-center justify-center rounded-[5px] hover:bg-accent">
+            <a class="text-white font-bold" href="https://drive.google.com/file/d/1kVQv08SA9Z_lEr28pbkdLqqkwAW2PMe1/view?usp=sharing">My Resume</a>
+          </div>
         </div>
       </div>
-      <div class="p-5 pt-8 md:p-8 md:pt-12 ">
+    </div>
+  </section>
+      <section id="about" class="bg-white min-h-screen">
+        <p class="text-background text-3xl font-bold text-center md:text-start p-10 md:pt-20 p-8 about">About Me</p>
+        <div class="flex flex-col md:flex-row items-center md:items-start p-4 md:p-8 gap-0 md:gap-20">
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+              <p class="text-l md:text-2xl text-left md:text-start md:pt-0 about-text">
+                  Hello everyone, I'm Ugustiningtyas Supriatno, an undergraduate
+                  Computer Engineering student from Universitas Negeri Makassar.
+                  Enthusiastic and highly motivated in the field of technology, I have
+                  broad curiosity and like to try new things. Right now, I'm focusing
+                  on Flutter development and the Internet of Things.
+              </p>
+          </div>
+          <img
+              class="w-full max-w-sm md:w-auto h-auto object-cover order-1 md:order-2 about-image"
+              src="assets/img/about.png"
+              alt="About Me"
+          />
+          
+      </div>
+        <div class="p-5 md:p-8 md:pb-0">
+          <hr />
+        </div>
+        <div class="flex flex-col md:space-x-4 place-items-center md:flex justify-center md:text-start gap-5 md:gap-20 md:flex-row ">
+          <div class="h-auto w-96 rounded-[5px] bg-card shadow-md education">
+            <p class="text-background font-bold text-2xl pt-5 pl-8">Education</p>
+            <ul class="sessions pr-5 pl-8 pb-5">
+              <li>
+                <div class="time font-bold">SMK NEGERI 7 MAKASSAR</div>
+                <p>Software Engineering</p>
+                <p>June 2019 - May 2022</p>
+              </li>
+              <li>
+                <div class="time font-bold">Indobot Academy</div>
+                <p>MSIB BATCH 7 - IoT Engineer Camp </p>
+                <p>August 2024 - December 2024</p>
+              </li>
+              <li>
+                <div class="time font-bold">UNIVERSITAS NEGERI MAKASSAR</div>
+                <p>Computer Engineering</p>
+                <p>August 2022 - Present</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="h-auto w-96 bg-card rounded-[5px] shadow-md experiences">
+            <p class="text-background font-bold text-2xl pt-5 pl-8">
+              Experiences
+            </p>
+            <ul class="sessions pr-5 pl-8 pb-5">
+              <li>
+                <div class="time font-bold">Bank BRI KC Panakkukang Makassar</div>
+                <p>Internship</p>
+                <p>April 2021 - June 2021</p>
+              </li>
+              <li>
+                <div class="time font-bold">Universitas Negeri Makassar</div>
+                <p>Lecturer Assistant</p>
+                <p>August 2023 - December 2023</p>
+              </li>
+              <li>
+                <div class="time font-bold">
+                  Algoland Academy
+                </div>
+                <p>R&D Division</p>
+                <p>December 2024 - June 2025</p>
+              </li>
+              <li>
+                <div class="time font-bold">
+                  GDGoC Universitas Negeri Makassar
+                </div>
+                <p>Education Dision (Back-End Web Development)</p>
+                <p>November 2024 - November 2025</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-5 md:p-8 md:pb-0">
+          <hr />
+        </div>
+        <!-- certificates -->
+        <div class="container mx-auto p-5 md:p-8">
+          <p class="text-3xl font-bold text-center md:text-start mb-4">My Certificates</p>
+      
+          <div class="scrolling-container pb-4">
+            <div class="scrolling-track space-x-4">
+      
+              <!-- Group 1 -->
+              <div class="flex space-x-4">
+                <!-- Sertifikat 1 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">How To Become a Mobile Developer</h3>
+                    <p class="text-gray-600 mb-4">Talenthub Indonesia</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/flutter.jpg" alt="Mobile Developer Certificate" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 2 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Junior Web Developer</h3>
+                    <p class="text-gray-600 mb-4">Digital Talent Scholarship</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/jwd.jpg" alt="jwd" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 3 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Belajar membuat aplikasi Flutter</h3>
+                    <p class="text-gray-600 mb-4">Dicoding</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/flutter_dico.jpg" alt="flutter dicoding" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 4 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Front-end Web untuk Pemula</h3>
+                    <p class="text-gray-600 mb-4">Dicoding</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/web_dico.png" alt="fe web" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 5 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Dasar Pemrograman JavaScript</h3>
+                    <p class="text-gray-600 mb-4">Dicoding</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/js.png" alt="js" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 6 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Internet of Things BIZ</h3>
+                    <p class="text-gray-600 mb-4">CertNexus</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/certnexus.jpg" alt="certnexus" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 7 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Top 8 Best Project IoT</h3>
+                    <p class="text-gray-600 mb-4">Indobot Academy</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/top8.jpg" alt="iot" />
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Group 2 (copy of Group 1 for infinite scroll illusion) -->
+              <div class="flex space-x-4">
+                <!-- Paste all 7 certificates again -->
+                <!-- Sertifikat 1 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">How To Become a Mobile Developer</h3>
+                    <p class="text-gray-600 mb-4">Talenthub Indonesia</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/flutter.jpg" alt="Mobile Developer Certificate" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 2 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Junior Web Developer</h3>
+                    <p class="text-gray-600 mb-4">Digital Talent Scholarship</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/jwd.jpg" alt="jwd" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 3 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Belajar membuat aplikasi Flutter</h3>
+                    <p class="text-gray-600 mb-4">Dicoding</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/flutter_dico.jpg" alt="flutter dicoding" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 4 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Front-end Web untuk Pemula</h3>
+                    <p class="text-gray-600 mb-4">Dicoding</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/web_dico.png" alt="fe web" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 5 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Dasar Pemrograman JavaScript</h3>
+                    <p class="text-gray-600 mb-4">Dicoding</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/js.png" alt="js" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 6 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Internet of Things BIZ</h3>
+                    <p class="text-gray-600 mb-4">CertNexus</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/certnexus.jpg" alt="certnexus" />
+                  </div>
+                </div>
+      
+                <!-- Sertifikat 7 -->
+                <div class="flex-shrink-0 w-[300px] bg-white rounded-[5px] shadow-lg">
+                  <div class="p-5">
+                    <h3 class="font-bold text-l">Top 8 Best Project IoT</h3>
+                    <p class="text-gray-600 mb-4">Indobot Academy</p>
+                    <img class="w-full h-auto rounded-[5px]" src="assets/img/top8.jpg" alt="iot" />
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <div>
+          <hr />
+        </div>
+        <div class="container mx-auto p-8 md:p-8">
+          <p class="text-3xl font-bold text-center  md:text-left skill">My Skills</p>
+          <div class="flex flex-wrap justify-center items-center gap-4  sm:gap-8 md:justify-start md:mb-5 md:p-0">
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md html">
+      <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+          <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+          <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md css">
+      <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+    </div>
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md js">
+      <svg width="50px" height="50px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"> </path> <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"> </path> <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"> </path> </g> </g></svg>
+    </div>
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md flutter">
+      <svg width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_flutter</title><polyline points="15.383 18.316 18.744 15.042 27.093 15.042 19.697 22.438 15.383 18.316 15.383 18.316 15.383 18.316 15.383 18.316 15.383 18.316" style="fill:#40d0fd"></polyline><polygon points="4.907 16.125 9.106 20.424 27.093 2.287 18.744 2.287 4.907 16.125" style="fill:#41d0fd;isolation:isolate"></polygon><polygon points="11.176 22.479 15.435 26.675 19.697 22.438 15.383 18.316 11.176 22.479" style="fill:#1fbcfd"></polygon><polygon points="15.435 26.675 19.697 22.438 26.989 29.813 18.593 29.813 15.435 26.675" style="fill:#095a9d"></polygon><polygon points="15.435 26.675 19.406 25.354 18.068 24.057 15.435 26.675" style="fill:#0e5199"></polygon></g></svg>
+    </div>
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md php">
+      <svg width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><radialGradient id="a" cx="-16.114" cy="20.532" r="18.384" gradientTransform="translate(26.52 -9.307)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffffff"></stop><stop offset="0.5" stop-color="#4c6b96"></stop><stop offset="1" stop-color="#231f20"></stop></radialGradient></defs><title>file_type_php</title><ellipse cx="16" cy="16" rx="14" ry="7.365" style="fill:url(#a)"></ellipse><ellipse cx="16" cy="16" rx="13.453" ry="6.818" style="fill:#6280b6"></ellipse><path d="M18.725,18.2l.667-3.434a1.752,1.752,0,0,0-.372-1.719,2.929,2.929,0,0,0-2-.525H15.867l.331-1.7a.219.219,0,0,0-.215-.26h-1.6a.219.219,0,0,0-.215.177l-.709,3.646a2.051,2.051,0,0,0-.477-1.054,2.783,2.783,0,0,0-2.2-.807H7.7a.219.219,0,0,0-.215.177l-1.434,7.38a.219.219,0,0,0,.215.26H7.869a.219.219,0,0,0,.215-.177l.347-1.785h1.2a5.167,5.167,0,0,0,1.568-.2,3.068,3.068,0,0,0,1.15-.689,3.538,3.538,0,0,0,.68-.844l-.287,1.475a.219.219,0,0,0,.215.26h1.6a.219.219,0,0,0,.215-.177l.787-4.051h1.094c.466,0,.6.093.64.133s.1.165.025.569l-.635,3.265a.219.219,0,0,0,.215.26h1.62A.219.219,0,0,0,18.725,18.2ZM11.33,15.366a1.749,1.749,0,0,1-.561,1.092,2.171,2.171,0,0,1-1.315.321H8.742l.515-2.651h.921c.677,0,.949.145,1.059.266A1.181,1.181,0,0,1,11.33,15.366Z" style="fill:#fff"></path><path d="M25.546,13.332a2.783,2.783,0,0,0-2.2-.807H20.255a.219.219,0,0,0-.215.177l-1.434,7.38a.219.219,0,0,0,.215.26h1.608a.219.219,0,0,0,.215-.177l.347-1.785h1.2a5.167,5.167,0,0,0,1.568-.2,3.068,3.068,0,0,0,1.15-.689,3.425,3.425,0,0,0,1.076-1.927A2.512,2.512,0,0,0,25.546,13.332Zm-1.667,2.034a1.749,1.749,0,0,1-.561,1.092A2.171,2.171,0,0,1,22,16.778H21.29l.515-2.651h.921c.677,0,.949.145,1.059.266A1.181,1.181,0,0,1,23.879,15.366Z" style="fill:#fff"></path><path d="M10.178,13.908a1.645,1.645,0,0,1,1.221.338,1.34,1.34,0,0,1,.145,1.161,1.945,1.945,0,0,1-.642,1.223A2.361,2.361,0,0,1,9.454,17H8.476l.6-3.089ZM6.261,20.124H7.869l.381-1.962H9.627a4.931,4.931,0,0,0,1.5-.191,2.84,2.84,0,0,0,1.07-.642,3.207,3.207,0,0,0,1.01-1.808,2.3,2.3,0,0,0-.385-2.044,2.568,2.568,0,0,0-2.035-.732H7.7Z" style="fill:#000004"></path><path d="M14.387,10.782h1.6L15.6,12.744h1.421a2.767,2.767,0,0,1,1.85.468,1.548,1.548,0,0,1,.305,1.516l-.667,3.434H16.89l.635-3.265a.886.886,0,0,0-.08-.76,1.121,1.121,0,0,0-.8-.2H15.37l-.822,4.228h-1.6Z" style="fill:#000004"></path><path d="M22.727,13.908a1.645,1.645,0,0,1,1.221.338,1.34,1.34,0,0,1,.145,1.161,1.945,1.945,0,0,1-.642,1.223A2.361,2.361,0,0,1,22,17h-.978l.6-3.089ZM18.81,20.124h1.608l.381-1.962h1.377a4.931,4.931,0,0,0,1.5-.191,2.84,2.84,0,0,0,1.07-.642,3.207,3.207,0,0,0,1.01-1.808,2.3,2.3,0,0,0-.385-2.044,2.568,2.568,0,0,0-2.035-.732H20.244Z" style="fill:#000004"></path></g></svg>
+    </div>
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md java">
+      <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z" fill="#E76F00"></path> <path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z" fill="#E76F00"></path> <path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z" fill="#5382A1"></path> <path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z" fill="#5382A1"></path> <path d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z" fill="#5382A1"></path> <path d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z" fill="#5382A1"></path> <path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z" fill="#5382A1"></path> <path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z" fill="#5382A1"></path> </g></svg>
+    </div>
+    <div class="h-[70px] w-[70px] bg-white rounded-[5px] flex items-center justify-center shadow-md arduino">
+      <svg width="50px" height="50px" viewBox="0 -41 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#00979C"> <path d="M14.044,130.399 L0.919,173.242 L11.247,173.242 L13.616,165.259 L26.419,165.259 L28.724,173.242 L39.955,173.242 L26.831,130.399 L14.044,130.399 L14.044,130.399 Z M16.21,156.641 L20.109,143.316 L23.964,156.641 L16.21,156.641 L16.21,156.641 Z"> </path> <path d="M64.632,153.696 C64.477,153.53 64.319,153.373 64.158,153.226 C64.481,153.104 64.796,152.974 65.104,152.832 C66.354,152.258 67.449,151.489 68.359,150.552 C69.279,149.606 70.002,148.466 70.507,147.163 C71.007,145.876 71.261,144.397 71.261,142.77 C71.261,140.527 70.856,138.587 70.06,137.002 C69.255,135.399 68.09,134.079 66.599,133.078 C65.152,132.108 63.392,131.407 61.367,130.996 C59.421,130.601 57.229,130.399 54.854,130.399 L41.456,130.399 L41.456,173.242 L51.731,173.242 L51.731,156.502 L52.036,156.502 C53.16,156.502 54.097,156.749 54.9,157.259 C55.697,157.764 56.308,158.509 56.771,159.541 L62.981,173.242 L74.936,173.242 L67.391,157.959 C66.477,156.103 65.574,154.71 64.632,153.696 L64.632,153.696 Z M60.163,145.477 C59.866,146.043 59.454,146.507 58.903,146.895 C58.322,147.303 57.601,147.616 56.757,147.826 C55.866,148.049 54.849,148.161 53.733,148.161 L51.731,148.161 L51.731,139.142 L53.989,139.142 C56.341,139.142 58.089,139.511 59.184,140.24 C60.138,140.875 60.602,141.945 60.602,143.513 C60.602,144.271 60.458,144.914 60.163,145.477 L60.163,145.477 Z"> </path> <path d="M105.04,135.487 C103.31,133.748 101.128,132.446 98.555,131.619 C96.047,130.81 93.095,130.399 89.782,130.399 L76.193,130.399 L76.193,173.242 L88.022,173.242 C91.839,173.242 95.178,172.722 97.945,171.697 C100.755,170.658 103.102,169.15 104.919,167.216 C106.733,165.286 108.085,162.928 108.935,160.209 C109.769,157.547 110.191,154.553 110.191,151.31 C110.191,147.775 109.768,144.674 108.932,142.093 C108.078,139.449 106.769,137.227 105.04,135.487 L105.04,135.487 Z M96.639,161.524 C94.855,163.506 92.267,164.469 88.727,164.469 L86.467,164.469 L86.467,139.172 L89.27,139.172 C91.251,139.172 92.914,139.452 94.211,140.005 C95.469,140.54 96.442,141.296 97.186,142.314 C97.946,143.358 98.497,144.668 98.823,146.205 C99.166,147.831 99.341,149.715 99.341,151.805 C99.341,156.263 98.432,159.533 96.639,161.524 L96.639,161.524 Z"> </path> <path d="M134.942,157.654 C134.942,159.131 134.806,160.39 134.535,161.396 C134.283,162.335 133.912,163.102 133.43,163.675 C132.968,164.226 132.403,164.615 131.704,164.864 C130.943,165.136 129.97,165.273 128.81,165.273 C127.583,165.273 126.571,165.116 125.802,164.805 C125.063,164.505 124.469,164.076 123.985,163.495 C123.499,162.91 123.151,162.176 122.95,161.31 C122.726,160.354 122.613,159.229 122.613,157.963 L122.613,130.399 L112.339,130.399 L112.339,158.427 C112.339,160.743 112.626,162.869 113.19,164.745 C113.777,166.694 114.745,168.379 116.068,169.75 C117.391,171.12 119.123,172.18 121.216,172.897 C123.25,173.598 125.708,173.953 128.521,173.953 C131.036,173.953 133.344,173.598 135.378,172.897 C137.458,172.184 139.251,171.103 140.708,169.683 C142.166,168.261 143.297,166.471 144.07,164.363 C144.83,162.293 145.216,159.869 145.216,157.158 L145.216,130.399 L134.942,130.399 L134.942,157.654"> </path> <path d="M150.47,139.018 L159.69,139.018 L159.69,164.562 L150.47,164.562 L150.47,173.242 L179.313,173.242 L179.313,164.562 L170.093,164.562 L170.093,139.018 L179.313,139.018 L179.313,130.399 L150.47,130.399 L150.47,139.018"> </path> <path d="M207.905,154.811 L196.419,130.399 L184.79,130.399 L184.79,173.242 L194.359,173.242 L194.359,148.366 L205.906,173.242 L217.476,173.242 L217.476,130.399 L207.905,130.399 L207.905,154.811"> </path> <path d="M250.738,135.468 C247.738,131.653 243.241,129.719 237.374,129.719 C234.864,129.719 232.47,130.164 230.258,131.041 C228.015,131.93 226.033,133.314 224.366,135.158 C222.714,136.986 221.402,139.337 220.469,142.144 C219.546,144.915 219.078,148.238 219.078,152.022 C219.078,159.012 220.565,164.45 223.497,168.188 C226.497,172.014 230.994,173.953 236.861,173.953 C239.372,173.953 241.768,173.508 243.98,172.631 C246.224,171.741 248.205,170.356 249.87,168.515 C251.52,166.688 252.832,164.338 253.768,161.529 C254.689,158.759 255.157,155.436 255.157,151.65 C255.157,144.64 253.67,139.195 250.738,135.468 L250.738,135.468 Z M243.976,157.729 C243.682,159.31 243.223,160.643 242.612,161.692 C242.032,162.691 241.314,163.423 240.419,163.928 C239.527,164.431 238.416,164.686 237.118,164.686 C234.55,164.686 232.76,163.73 231.646,161.765 C230.422,159.606 229.801,156.204 229.801,151.65 C229.801,149.512 229.955,147.591 230.261,145.944 C230.555,144.366 231.017,143.035 231.637,141.986 C232.227,140.983 232.947,140.249 233.838,139.742 C234.717,139.241 235.82,138.987 237.118,138.987 C239.706,138.987 241.501,139.941 242.604,141.903 C243.819,144.063 244.435,147.468 244.435,152.022 C244.435,154.166 244.281,156.086 243.976,157.729 L243.976,157.729 Z"> </path> <path d="M240.315,5.74 L242.138,5.74 L242.138,10.533 L243.431,10.533 L243.431,5.74 L245.269,5.74 L245.269,4.55 L240.315,4.55 L240.315,5.74"> </path> <path d="M249.768,4.55 L248.521,8.628 L247.231,4.55 L245.544,4.55 L245.544,10.533 L246.76,10.533 L246.76,6.711 L247.966,10.533 L249.076,10.533 L250.22,6.81 L250.22,10.533 L251.43,10.533 L251.43,4.55 L249.768,4.55"> </path> <path d="M190.275,120.327 C173.987,120.327 160.061,114.835 147.805,103.602 C140.234,96.665 133.992,88.166 128.249,79.329 C122.507,88.166 116.264,96.665 108.694,103.602 C95.525,115.671 80.427,121.113 62.545,120.236 C28.444,120.088 0.747,93.176 0.747,60.118 C0.747,26.969 28.596,0 62.827,0 C81.559,0 97.33,6.199 111.037,18.95 C117.621,25.075 123.179,32.18 128.249,39.614 C133.319,32.18 138.878,25.075 145.461,18.95 C159.168,6.199 174.939,0 193.671,0 C227.903,0 255.751,26.969 255.751,60.118 C255.751,93.176 228.055,120.088 193.953,120.236 C192.714,120.297 191.487,120.327 190.275,120.327 L190.275,120.327 Z M140.72,59.316 C147.514,70.339 154.108,80.599 162.14,87.959 C171.206,96.268 180.762,99.686 193.115,99.033 L193.671,99.018 C216.202,99.018 234.533,81.568 234.533,60.118 C234.533,38.669 216.202,21.218 193.671,21.218 C180.37,21.218 169.643,25.434 159.913,34.485 C152.646,41.246 146.646,49.908 140.72,59.316 L140.72,59.316 Z M62.827,21.218 C40.296,21.218 21.965,38.669 21.965,60.118 C21.965,81.568 40.296,99.018 62.827,99.018 L63.384,99.033 C75.738,99.686 85.292,96.268 94.358,87.959 C102.39,80.599 108.985,70.339 115.778,59.316 C109.852,49.908 103.852,41.246 96.586,34.485 C86.855,25.434 76.128,21.218 62.827,21.218 L62.827,21.218 Z"> </path> <path d="M196.477,52.407 L196.477,40.901 L184.501,40.901 L184.501,52.407 L172.996,52.407 L172.996,64.325 L184.501,64.325 L184.501,75.916 L196.477,75.916 L196.477,64.325 L207.983,64.325 L207.983,52.407 L196.477,52.407"> </path> <path d="M45.599,52.263 L83.416,52.263 L83.416,64.555 L45.599,64.555 L45.599,52.263 Z"> </path> </g> </g></svg>
+    </div>
+  </div>
+
+      </section>
+      <section id="project" class="bg-background min-h-screen">
+        <p class="text-white text-3xl font-bold text-center p-10 md:pt-10 p-8 md:text-left project">Project</p>
+      <div class="flex flex-col items-center gap-5 p-0 md:p-8 md:pt-5 md:flex-row">
+    <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] anuflix">
+      <div class="p-5">
+        <h3 class="font-bold text-xl">Anuflix</h3>
+        <p class="text-background mb-4">Movie Apps with TMDb API and develop with Flutter</p>
+        <img class="w-full h-auto rounded-[5px]" src="assets/img/Anuflix.png" alt="anuflix" />
+      </div>
+    </div>
+    <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] anucoffee">
+      <div class="p-5">
+        <h3 class="font-bold text-xl">Anu Coffee</h3>
+        <p class="text-background mb-4">Anu Coffee is an online coffee ordering application made by Flutter and Firebase</p>
+        <img class="w-full h-auto rounded-[5px]" src="assets/img/anucoffe.png" alt="anu coffee" />
+      </div>
+    </div>
+    <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] apotek">
+      <div class="p-5">
+        <h3 class="font-bold text-xl">Apotek Sehat</h3>
+        <p class="text-background mb-4">Java GUI based desktop application for recording drug data, drug categories, and transactions at pharmacies</p>
+        <img class="w-full h-auto rounded-[5px]" src="assets/img/apoteksehat.png" alt="apotek sehat" />
+      </div>
+    </div>
+    <div class="w-[22rem] h-[23rem] md:h-[20rem] md:w-[22rem] bg-card rounded-[5px] jemuranuno">
+      <div class="p-5">
+        <h3 class="font-bold text-xl">JemuranUNO</h3>
+        <p class="text-background mb-4">Automatic Clothesline using Internet of Things and Blynk App</p>
+        <img class="w-full h-auto rounded-[5px]" src="assets/img/jemuranuno.png" alt="jemuranuno" />
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="p-5 md:pt-24 md:p-8">
         <hr>
       </div>
-    </section>
-    
-    <footer class="bg-background">
-      <div class="flex flex-col md:flex-row place-items-center md:place-content-between md:pb-0 md:p-8 md:pt-0">
-        <p class="text-white text-start font-bold pb-5">
-        Ugustiningtyas Supriatno</p>
-        <div class="flex flex-row gap-3 pb-5">
-           <a href="https://www.instagram.com/ty.dvoid/"> <svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>instagram [#167]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#FBF8FF"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]"> </path> </g> </g> </g> </g></svg></a>
-           <a href="https://www.linkedin.com/in/ugustiningtyas-supriatno-3a965a1b4/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#FBF8FF"></path> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#FBF8FF"></path> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#FBF8FF"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#FBF8FF"></path> </g></svg></a>
-            <a href="https://github.com/cubingarea/"><svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FBF8FF"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg></a>
+      </section>
+      <section id="contact" class="bg-background min-h-screen">
+        <p class="text-white text-3xl font-bold text-center p-8 md:pb-0 md:text-left contact">Contact</p>
+        <div class="flex flex-col items-start p-8 md:p-8 md:flex-row">
+          <div class="w-[100%] lg:pr-20">
+            <p class="text-white text-l">
+              I’m currently looking for any new opportunities, my inbox is always
+              open. Whether you have a question or just want to say hi, I’ll
+              try my best to get back to you!
+            </p>
+            <div class="flex flex-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#FBF8FF"></path> </g></svg>
+              <p class="text-white text-sm ml-2">+62 81341498382</p>
+            </div> 
+            <div class="flex flex-row ">
+              <svg width="20
+              " height="20
+              " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#FBF8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="3" y="5" width="18" height="14" rx="2" stroke="#FBF8FF" stroke-width="2" stroke-linecap="round"></rect> </g></svg>
+              <p class="text-white text-sm ml-2">ugustining.tyas237@gmail.com</p>
+            </div> 
+            <div class="flex flex-row ">
+              <svg width="20" height="20" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>location</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-106.000000, -413.000000)" fill="#FBF8FF"> <path d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z" id="location" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+              <p class="text-white text-sm ml-2 mt-1">Makassar, Indonesia</p>
+            </div> 
+          </div>
+          <div class="w-[100%]">
+            <form action="https://formspree.io/f/mdoqaydp" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block text-white font-bold mb-2">Your Name <span style="color: red;">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full p-2 border border-gray-300 rounded"
+            placeholder="Your Name"
+          />
         </div>
-      </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    <script>
-      ScrollReveal({
-        reset: false,
-        distance: "60px",
-        duration: 2500,
-        delay: 400 
-      })
-    ScrollReveal().reveal(".hero-image", {
-      delay: 300,
-      duration: 1500,
-      origin:"bottom",
-      reset: true
-    });
-    ScrollReveal().reveal(".hero-text", {
-      delay: 400,
-      duration: 1500,
-      origin:"bottom",
-      reset: true
-    });
-    ScrollReveal().reveal(".about, .certificate, .skill,.project, .contact", {
-      delay: 200,
-      duration: 1000,
-      origin:"top",
-      reset: true
-    });
-    ScrollReveal().reveal(".about-text", {
-      delay: 250,
-      duration: 1000,
-      origin:"left",
-      reset: false
-    });
-    
-    ScrollReveal().reveal(".about-image", {
-      delay: 250,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".education", {
-      delay: 300,
-      duration: 1000,
-      origin:"bottom",
-      reset: true
-    });
-    
-    ScrollReveal().reveal(".experiences", {
-      delay: 500,
-      duration: 1000,
-      origin:"bottom",
-      reset: true
-    });
-    ScrollReveal().reveal(".html", {
-      delay: 550,
-      duration: 1500,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".css", {
-      delay: 750,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".js", {
-      delay: 950,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".flutter", {
-      delay: 1050,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".php", {
-      delay: 1250,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".java", {
-      delay: 1450,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".arduino", {
-      delay: 1650,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".anuflix", {
-      delay: 550,
-      duration: 1500,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".anucoffee", {
-      delay: 750,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".apotek", {
-      delay: 950,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    ScrollReveal().reveal(".jemuranuno", {
-      delay: 1050,
-      duration: 1000,
-      origin:"bottom",
-      reset: false
-    });
-    </script>
-  </body>
-</html>
+        <div class="mb-4">
+          <label for="email" class="block text-white font-bold mb-2">Email Address<span style="color: red;">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full p-2 border border-gray-300 rounded"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-white font-bold mb-2">Your Message <span style="color: red;">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="4"
+            class="w-full p-2 border border-gray-300 rounded"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full h-12 bg-primary text-white font-bold rounded hover:bg-accent transition"
+        >
+          Send Message
+        </button>
+      </form>
+          </div>
+        </div>
+        <div class="p-5 pt-8 md:p-8 md:pt-12 ">
+          <hr>
+        </div>
+      </section>
+      
+      <footer class="bg-background">
+        <div class="flex flex-col md:flex-row place-items-center md:place-content-between md:pb-0 md:p-8 md:pt-0">
+          <p class="text-white text-start font-bold pb-5">
+          Ugustiningtyas Supriatno</p>
+          <div class="flex flex-row gap-3 pb-5">
+            <a href="https://www.instagram.com/ty.dvoid/"> <svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>instagram [#167]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#FBF8FF"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]"> </path> </g> </g> </g> </g></svg></a>
+            <a href="https://www.linkedin.com/in/ugustiningtyas-supriatno-3a965a1b4/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#FBF8FF"></path> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#FBF8FF"></path> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#FBF8FF"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#FBF8FF"></path> </g></svg></a>
+              <a href="https://github.com/dvoidd/"><svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FBF8FF"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg></a>
+          </div>
+        </div>
+      </footer>
+      <script src="assets/js/script.js"></script>
+      <script>
+        ScrollReveal({
+          reset: false,
+          distance: "60px",
+          duration: 2500,
+          delay: 400 
+        })
+      ScrollReveal().reveal(".hero-image", {
+        delay: 300,
+        duration: 1500,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".hero-text", {
+        delay: 400,
+        duration: 1500,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".about, .certificate, .skill,.project, .contact", {
+        delay: 200,
+        duration: 1000,
+        origin:"top",
+        reset: false
+      });
+      ScrollReveal().reveal(".about-text", {
+        delay: 250,
+        duration: 1000,
+        origin:"left",
+        reset: false
+      });
+      
+      ScrollReveal().reveal(".about-image", {
+        delay: 250,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".education", {
+        delay: 300,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      
+      ScrollReveal().reveal(".experiences", {
+        delay: 500,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".html", {
+        delay: 550,
+        duration: 1500,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".css", {
+        delay: 750,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".js", {
+        delay: 950,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".flutter", {
+        delay: 1050,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".php", {
+        delay: 1250,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".java", {
+        delay: 1450,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".arduino", {
+        delay: 1650,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".anuflix", {
+        delay: 550,
+        duration: 1500,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".anucoffee", {
+        delay: 750,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".apotek", {
+        delay: 950,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      ScrollReveal().reveal(".jemuranuno", {
+        delay: 1050,
+        duration: 1000,
+        origin:"bottom",
+        reset: false
+      });
+      </script>
+    </body>
+  </html>

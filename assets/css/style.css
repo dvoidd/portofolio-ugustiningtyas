@@ -6,57 +6,7 @@
   padding: 0;
 }
 
-nav {
-  width: 100%;
-  padding: 1rem 2rem;
-  background-color: #534e60;
-  position: fixed;
-  border-bottom: 1px solid #5a5f68;
-  z-index: 10;
-}
-nav .nav-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .nav-container ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-nav .nav-container ul li {
-  list-style-type: none;
-  font-size: 20px;
-}
-nav .nav-container .hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 4px;
-}
-nav .nav-container .hamburger .div1,
-.div2 {
-  width: 25px;
-  height: 2px;
-  background-color: white;
-}
-nav .nav-container .hamburger .div3 {
-  width: 17px;
-  height: 2px;
-  background-color: white;
-  margin-left: auto;
-}
-nav .nav-container .nav-item {
-  padding: 0.5rem 1rem;
-  color: #d7d7d9;
-  text-decoration: none;
-}
-nav .nav-container .nav-item:hover {
-  color: #fff;
-}
+
 h1 {
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -104,30 +54,22 @@ h1 {
 hr {
   color: black;
 }
-/* .horizontal-scroll {
-  width: 100%;
-  overflow-x: scroll;
-} */
-@media (max-width: 1080px) {
-  nav .nav-container .hamburger {
-    display: flex;
-  }
-  nav .nav-container ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-  nav .nav-container ul.show {
-    display: flex;
-  }
+.scrolling-container {
+  overflow: hidden;
+  position: relative;
+}
 
-  nav .nav-container ul li {
-    text-align: center;
-    width: 100%;
-    padding: 20px;
+.scrolling-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
